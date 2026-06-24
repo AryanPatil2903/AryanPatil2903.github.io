@@ -589,3 +589,29 @@ body{
   .section{padding:80px 0;}
   .cta-inner{padding:36px 24px;}
 }
+/* ══ CRITICAL FIXES ══ */
+
+/* Fix 1: Never block pointer events — only hide visual cursor */
+body { cursor: auto; }
+* { cursor: auto; }
+a, button { cursor: pointer; }
+
+/* Fix 2: Ensure hero content is always visible above noise/glow */
+.hero > * { position: relative; z-index: 2; }
+.hero-noise, .hero-glow-orb, #noise-canvas {
+  pointer-events: none !important;
+  z-index: 0;
+}
+#noise-canvas { z-index: 1; }
+
+/* Fix 3: Custom cursor only on true desktop */
+@media (pointer: fine) {
+  body { cursor: none; }
+  a, button { cursor: none; }
+  #cursor, #cursor-trail { display: block; }
+}
+@media (pointer: coarse) {
+  #cursor, #cursor-trail { display: none !important; }
+  body, *, a, button { cursor: auto !important; }
+}
+
