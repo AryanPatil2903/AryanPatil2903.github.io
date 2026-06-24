@@ -10,19 +10,28 @@ if (nc) {
   }
   resizeNoise();
   window.addEventListener('resize', resizeNoise);
-  let noiseFrame;
-  function drawNoise() {
-    const id = nctx.createImageData(nc.width, nc.height);
-    for (let i = 0; i < id.data.length; i += 4) {
-      const v = Math.random() * 255 | 0;
-      id.data[i] = id.data[i+1] = id.data[i+2] = v;
-      id.data[i+3] = 255;
+
+  // Only run noise on desktop — too heavy on mobile and causes blank screen delay
+  const isDesktop = window.matchMedia('(pointer: fine)').matches;
+  if (isDesktop) {
+    function drawNoise() {
+      const id = nctx.createImageData(nc.width, nc.height);
+      for (let i = 0; i < id.data.length; i += 4) {
+        const v = Math.random() * 255 | 0;
+        id.data[i] = id.data[i+1] = id.data[i+2] = v;
+        id.data[i+3] = 255;
+      }
+      nctx.putImageData(id, 0, 0);
+      setTimeout(() => requestAnimationFrame(drawNoise), 120);
     }
-    nctx.putImageData(id, 0, 0);
-    noiseFrame = setTimeout(() => requestAnimationFrame(drawNoise), 120);
+    // Delay noise start so hero content renders first
+    setTimeout(drawNoise, 800);
+  } else {
+    // Mobile: hide canvas entirely, don't run it
+    nc.style.display = 'none';
   }
-  drawNoise();
 }
+
 
 /* ══ CURSOR (desktop only) ══ */
 const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
