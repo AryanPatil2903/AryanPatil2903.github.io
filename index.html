@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Patil | LLM & AI/ML Engineer</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ─── HOME PAGE ─── -->
+  <div class="page active" id="page-home">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span class="status-dot-wrap"><span class="status-dot"></span> Open to work</span>
+      <button class="btn-cv" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero-layout">
+      <div class="hero-left">
+        <p class="hero-role">LLM &amp; AI/ML Engineer</p>
+        <h1 class="hero-name">Aryan<br/>Patil</h1>
+        <div class="hero-contacts">
+          <a href="mailto:aryanpatil2903@gmail.com" class="hero-contact-item">
+            <i class="fas fa-envelope"></i> aryanpatil2903@gmail.com
+          </a>
+          <a href="https://github.com/AryanPatil2903" target="_blank" class="hero-contact-item">
+            <i class="fab fa-github"></i> github.com/AryanPatil2903
+          </a>
+          <a href="#" class="hero-contact-item">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/aryanpatil
+          </a>
+          <span class="hero-contact-item">
+            <i class="fas fa-map-marker-alt"></i> Navi Mumbai, IN
+          </span>
+        </div>
+      </div>
+
+      <!-- AMBER GLOW ORB (replaces photo) -->
+      <div class="hero-orb-wrap">
+        <div class="orb-glow"></div>
+        <div class="orb-core"></div>
+        <div class="orb-ring orb-ring-1"></div>
+        <div class="orb-ring orb-ring-2"></div>
+        <div class="orb-particles" id="orbParticles"></div>
+      </div>
+    </div>
+
+    <!-- PILL NAV -->
+    <nav class="pill-nav">
+      <button class="pill-btn active" data-page="home">
+        <i class="fas fa-house"></i> Home
+      </button>
+      <button class="pill-btn" data-page="summary">
+        <i class="fas fa-user"></i> Summary
+      </button>
+      <button class="pill-btn" data-page="projects">
+        <i class="fas fa-briefcase"></i> Projects
+      </button>
+      <button class="pill-btn" data-page="skills">
+        <i class="fas fa-bolt"></i> Skills
+      </button>
+      <button class="pill-btn" data-page="contact">
+        <i class="fas fa-link"></i> Contact
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- ─── SUMMARY PAGE ─── -->
+  <div class="page" id="page-summary">
+    <div class="status-bar">
+      <span class="status-dot-wrap"><span class="status-dot"></span> Open to work</span>
+      <button class="btn-cv" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+    </div>
+
+    <div class="inner-page">
+      <div class="page-header">
+        <p class="section-eyebrow">Who I am</p>
+        <h2 class="page-title">Summary</h2>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-bio glass-card">
+          <h3>About Me</h3>
+          <p>I'm a 23-year-old AI/ML engineer from Navi Mumbai. I build LLM-powered applications, fine-tune language models, and deploy end-to-end AI systems — from RAG pipelines to real-time computer vision. Diploma in AI & ML (77.59%) from MSBTE, 2026.</p>
+          <p>I did all my early technical work on mobile before getting a laptop — which means I know how to ship with constraints. My strongest work is StockBot (multi-agent RAG) and SignTalkAI (real-time CNN sign language translation).</p>
+        </div>
+
+        <div class="summary-stats glass-card">
+          <h3>By the Numbers</h3>
+          <div class="stat-rows">
+            <div class="stat-row">
+              <span class="stat-val amber" data-target="5" data-suffix="+">0+</span>
+              <span class="stat-key">Deployed Projects</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-val amber" data-target="3" data-suffix="B">0B</span>
+              <span class="stat-key">Parameters Fine-tuned</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-val amber" data-target="4" data-suffix="GB">0GB</span>
+              <span class="stat-key">VRAM Budget</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-val amber" data-target="100" data-suffix="ms">&lt;100ms</span>
+              <span class="stat-key">CV Inference Speed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-edu glass-card">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <p class="edu-title">Diploma in AI & Machine Learning</p>
+              <p class="edu-org">MSBTE · 2024–2026</p>
+              <span class="edu-score">77.59%</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <p class="edu-title">HSC — Science</p>
+              <p class="edu-org">Maharashtra State Board · 2022</p>
+              <span class="edu-score">59.23%</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <p class="edu-title">LLM Engineering</p>
+              <p class="edu-org">Self-taught · Hugging Face, LangChain</p>
+              <span class="edu-score">Applied</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="pill-nav">
+      <button class="pill-btn" data-page="home"><i class="fas fa-house"></i> Home</button>
+      <button class="pill-btn active" data-page="summary"><i class="fas fa-user"></i> Summary</button>
+      <button class="pill-btn" data-page="projects"><i class="fas fa-briefcase"></i> Projects</button>
+      <button class="pill-btn" data-page="skills"><i class="fas fa-bolt"></i> Skills</button>
+      <button class="pill-btn" data-page="contact"><i class="fas fa-link"></i> Contact</button>
+    </nav>
+  </div>
+
+  <!-- ─── PROJECTS PAGE ─── -->
+  <div class="page" id="page-projects">
+    <div class="status-bar">
+      <span class="status-dot-wrap"><span class="status-dot"></span> Open to work</span>
+      <button class="btn-cv" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+    </div>
+
+    <div class="inner-page">
+      <div class="page-header">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="page-title">Projects</h2>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="project-row glass-card" data-detail="stockbot">
+          <div class="project-row-left">
+            <div class="project-icon-box"><i class="fas fa-chart-bar"></i></div>
+            <div>
+              <h3>StockBot</h3>
+              <p>Multi-agent RAG · Stock Research Assistant</p>
+            </div>
+          </div>
+          <div class="project-row-tags">
+            <span>LangChain</span><span>RAG</span><span>Gemini API</span>
+          </div>
+          <button class="project-arrow"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-row glass-card" data-detail="signtalk">
+          <div class="project-row-left">
+            <div class="project-icon-box"><i class="fas fa-hands"></i></div>
+            <div>
+              <h3>SignTalkAI</h3>
+              <p>Real-time Sign Language · CNN + MediaPipe</p>
+            </div>
+          </div>
+          <div class="project-row-tags">
+            <span>CNN</span><span>MediaPipe</span><span>OpenCV</span>
+          </div>
+          <button class="project-arrow"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-row glass-card" data-detail="medllm">
+          <div class="project-row-left">
+            <div class="project-icon-box"><i class="fas fa-heartbeat"></i></div>
+            <div>
+              <h3>MedLLM</h3>
+              <p>Fine-tuned LLaMA 3.2 3B · Medical Q&A</p>
+            </div>
+          </div>
+          <div class="project-row-tags">
+            <span>QLoRA</span><span>PEFT</span><span>Gradio</span>
+          </div>
+          <button class="project-arrow"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-row glass-card" data-detail="spam">
+          <div class="project-row-left">
+            <div class="project-icon-box"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h3>Spam Classifier</h3>
+              <p>NLP · TF-IDF · Email Classification</p>
+            </div>
+          </div>
+          <div class="project-row-tags">
+            <span>NLP</span><span>TF-IDF</span><span>Scikit-learn</span>
+          </div>
+          <button class="project-arrow"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-row glass-card" data-detail="marks">
+          <div class="project-row-left">
+            <div class="project-icon-box"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h3>Marks Predictor</h3>
+              <p>Regression · EDA · Flask Interface</p>
+            </div>
+          </div>
+          <div class="project-row-tags">
+            <span>Regression</span><span>Pandas</span><span>Flask</span>
+          </div>
+          <button class="project-arrow"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="pill-nav">
+      <button class="pill-btn" data-page="home"><i class="fas fa-house"></i> Home</button>
+      <button class="pill-btn" data-page="summary"><i class="fas fa-user"></i> Summary</button>
+      <button class="pill-btn active" data-page="projects"><i class="fas fa-briefcase"></i> Projects</button>
+      <button class="pill-btn" data-page="skills"><i class="fas fa-bolt"></i> Skills</button>
+      <button class="pill-btn" data-page="contact"><i class="fas fa-link"></i> Contact</button>
+    </nav>
+  </div>
+
+  <!-- ─── PROJECT DETAIL OVERLAY ─── -->
+  <div class="detail-overlay" id="detailOverlay">
+    <div class="detail-panel glass-card">
+      <button class="detail-back" id="detailBack"><i class="fas fa-chevron-left"></i> Back to Projects</button>
+      <div class="detail-icon-box" id="detailIcon"></div>
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <p class="detail-type" id="detailType"></p>
+      <div class="detail-section">
+        <h4>About The Project</h4>
+        <p id="detailAbout"></p>
+      </div>
+      <div class="detail-section">
+        <h4>Key Achievement</h4>
+        <p id="detailAchieve"></p>
+      </div>
+      <div class="detail-tags" id="detailTags"></div>
+      <a href="https://github.com/AryanPatil2903" target="_blank" class="btn-amber">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- ─── SKILLS PAGE ─── -->
+  <div class="page" id="page-skills">
+    <div class="status-bar">
+      <span class="status-dot-wrap"><span class="status-dot"></span> Open to work</span>
+      <button class="btn-cv" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+    </div>
+
+    <div class="inner-page">
+      <div class="page-header">
+        <p class="section-eyebrow">My toolkit</p>
+        <h2 class="page-title">Skills</h2>
+      </div>
+
+      <div class="skills-cols">
+        <div class="skills-col glass-card">
+          <h3 class="skills-col-title">Core Stack</h3>
+          <div class="skill-bar-list">
+            <div class="sbl-item">
+              <div class="sbl-label"><span>Python</span><span class="amber">90%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="90"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>LLM Fine-tuning</span><span class="amber">88%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="88"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>Prompt Engineering</span><span class="amber">92%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="92"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>LangChain / RAG</span><span class="amber">85%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="85"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>Flask / Gradio</span><span class="amber">87%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="87"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-col glass-card">
+          <h3 class="skills-col-title">Libraries & Tools</h3>
+          <div class="skill-bar-list">
+            <div class="sbl-item">
+              <div class="sbl-label"><span>OpenCV / MediaPipe</span><span class="amber">80%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="80"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>TensorFlow / CNN</span><span class="amber">75%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="75"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>Scikit-learn</span><span class="amber">84%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="84"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>ChromaDB / FAISS</span><span class="amber">82%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="82"></div></div>
+            </div>
+            <div class="sbl-item">
+              <div class="sbl-label"><span>SQL</span><span class="amber">72%</span></div>
+              <div class="sbl-track"><div class="sbl-fill" data-w="72"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-chips glass-card">
+        <h3 class="skills-col-title">Technologies</h3>
+        <div class="chip-grid">
+          <span class="chip">LLaMA 3.2</span><span class="chip">PEFT</span>
+          <span class="chip">QLoRA</span><span class="chip">BitsAndBytes</span>
+          <span class="chip">Hugging Face</span><span class="chip">Gemini API</span>
+          <span class="chip">LangChain</span><span class="chip">ChromaDB</span>
+          <span class="chip">FAISS</span><span class="chip">Flask</span>
+          <span class="chip">Gradio</span><span class="chip">OpenCV</span>
+          <span class="chip">MediaPipe</span><span class="chip">TensorFlow</span>
+          <span class="chip">Pandas</span><span class="chip">NumPy</span>
+          <span class="chip">Scikit-learn</span><span class="chip">Git</span>
+          <span class="chip">LM Studio</span><span class="chip">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="pill-nav">
+      <button class="pill-btn" data-page="home"><i class="fas fa-house"></i> Home</button>
+      <button class="pill-btn" data-page="summary"><i class="fas fa-user"></i> Summary</button>
+      <button class="pill-btn" data-page="projects"><i class="fas fa-briefcase"></i> Projects</button>
+      <button class="pill-btn active" data-page="skills"><i class="fas fa-bolt"></i> Skills</button>
+      <button class="pill-btn" data-page="contact"><i class="fas fa-link"></i> Contact</button>
+    </nav>
+  </div>
+
+  <!-- ─── CONTACT PAGE ─── -->
+  <div class="page" id="page-contact">
+    <div class="status-bar">
+      <span class="status-dot-wrap"><span class="status-dot"></span> Open to work</span>
+      <button class="btn-cv" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+    </div>
+
+    <div class="inner-page">
+      <div class="page-header">
+        <p class="section-eyebrow">Let's connect</p>
+        <h2 class="page-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links-col glass-card">
+          <h3>Links</h3>
+          <a href="mailto:aryanpatil2903@gmail.com" class="contact-row">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-row-label">Email</p>
+              <p class="contact-row-val">aryanpatil2903@gmail.com</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <a href="https://github.com/AryanPatil2903" target="_blank" class="contact-row">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-row-label">GitHub</p>
+              <p class="contact-row-val">AryanPatil2903</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <a href="#" class="contact-row">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <p class="contact-row-label">LinkedIn</p>
+              <p class="contact-row-val">linkedin.com/in/aryanpatil</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <div class="contact-row no-link">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-row-label">Location</p>
+              <p class="contact-row-val">Navi Mumbai, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-col glass-card" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="fname" placeholder="Your name" required/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="fmsg" rows="4" placeholder="Tell me about the role..." required></textarea>
+          </div>
+          <button type="submit" class="btn-amber full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+
+    <nav class="pill-nav">
+      <button class="pill-btn" data-page="home"><i class="fas fa-house"></i> Home</button>
+      <button class="pill-btn" data-page="summary"><i class="fas fa-user"></i> Summary</button>
+      <button class="pill-btn" data-page="projects"><i class="fas fa-briefcase"></i> Projects</button>
+      <button class="pill-btn" data-page="skills"><i class="fas fa-bolt"></i> Skills</button>
+      <button class="pill-btn active" data-page="contact"><i class="fas fa-link"></i> Contact</button>
+    </nav>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
