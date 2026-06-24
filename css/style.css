@@ -615,4 +615,84 @@ a, button { cursor: pointer; }
   #cursor, #cursor-trail { display: none !important; }
   body, *, a, button { cursor: auto !important; }
 }
+/* ══ MOBILE BLANK FIX ══ */
 
+/* Force hero content visible immediately */
+.hero-eyebrow,
+.hero-headline,
+.hero-sub,
+.hero-ctas,
+.hero-meta-strip,
+.trust-strip {
+  position: relative;
+  z-index: 10;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Noise canvas must never block or delay content */
+#noise-canvas {
+  position: fixed;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  opacity: 0.03;
+}
+
+/* Orbs behind everything */
+.hero-noise,
+.hero-glow-orb {
+  position: absolute;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Mobile: fix all cursor and pointer issues */
+@media (max-width: 960px) {
+  html, body {
+    cursor: auto !important;
+    overflow-x: hidden;
+  }
+  * {
+    cursor: auto !important;
+  }
+  a, button {
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(201,74,26,0.2);
+  }
+  #cursor, #cursor-trail {
+    display: none !important;
+  }
+
+  /* Remove top padding causing blank space */
+  .hero {
+    padding-top: 80px !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Navbar height compensation */
+  .navbar {
+    padding: 14px 20px !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 70px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .hero-headline {
+    font-size: 2.6rem !important;
+    letter-spacing: -2px !important;
+  }
+  .hero-ctas {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .btn-orange.btn-lg,
+  .btn-ghost.btn-lg {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
