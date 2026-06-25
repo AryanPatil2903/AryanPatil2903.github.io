@@ -35,71 +35,77 @@ document.addEventListener('DOMContentLoaded', function() {
     var ro = new IntersectionObserver(function(entries) {
       entries.forEach(function(e, i) {
         if (e.isIntersecting) {
-          setTimeout(function() {
-            e.target.classList.add('visible');
-          }, i * 70);
+          setTimeout(function() { e.target.classList.add('visible'); }, i * 70);
           ro.unobserve(e.target);
         }
       });
-    }, { threshold: 0.07 });
+    }, { threshold: 0.06 });
     reveals.forEach(function(el) { ro.observe(el); });
   } else {
     reveals.forEach(function(el) { el.classList.add('visible'); });
   }
 
   /* ── SKILL BARS ── */
-  var barCards = document.querySelectorAll('.main-scard, .scard');
+  var specCards = document.querySelectorAll('.spec-card');
   if ('IntersectionObserver' in window) {
     var bo = new IntersectionObserver(function(entries) {
       entries.forEach(function(e) {
         if (e.isIntersecting) {
-          e.target.querySelectorAll('.bar-fill').forEach(function(b) {
+          e.target.querySelectorAll('.sbr-fill').forEach(function(b) {
             b.style.width = (b.getAttribute('data-w') || 0) + '%';
           });
           bo.unobserve(e.target);
         }
       });
     }, { threshold: 0.2 });
-    barCards.forEach(function(c) { bo.observe(c); });
+    specCards.forEach(function(c) { bo.observe(c); });
   } else {
-    document.querySelectorAll('.bar-fill').forEach(function(b) {
+    document.querySelectorAll('.sbr-fill').forEach(function(b) {
       b.style.width = (b.getAttribute('data-w') || 0) + '%';
     });
   }
 
-  /* ── STAT COUNTERS ── */
-  var counted = false;
-  var statsRow = document.querySelector('.stats-row');
-  if (statsRow && 'IntersectionObserver' in window) {
+  /* ── RACING STAT COUNTERS ── */
+  var statsBox = document.querySelector('.racing-stats');
+  var counted  = false;
+  if (statsBox && 'IntersectionObserver' in window) {
     var so = new IntersectionObserver(function(entries) {
       entries.forEach(function(e) {
         if (e.isIntersecting && !counted) {
           counted = true;
+
+          /* Animate fill bars */
+          statsBox.querySelectorAll('.rstat-fill').forEach(function(f) {
+            f.style.width = (f.getAttribute('data-w') || 0) + '%';
+          });
+
+          /* Animate number counters */
           var defs = [
             { idx: 0, target: 5,   suffix: '+' },
             { idx: 1, target: 3,   suffix: 'B' },
-            { idx: 2, target: 4,   suffix: 'GB' },
+            { idx: 2, target: 4,   suffix: 'GB' }
           ];
-          var items = document.querySelectorAll('.stat-num[data-count]');
+          var nums = statsBox.querySelectorAll('.rstat-num[data-count]');
           defs.forEach(function(d) {
-            var el = items[d.idx];
+            var el = nums[d.idx];
             if (!el) return;
             var start = null;
-            var dur = 1500;
+            var dur   = 1600;
             function step(ts) {
               if (!start) start = ts;
-              var p = Math.min((ts - start) / dur, 1);
+              var p    = Math.min((ts - start) / dur, 1);
               var ease = 1 - Math.pow(1 - p, 3);
               el.textContent = Math.floor(ease * d.target) + d.suffix;
               if (p < 1) requestAnimationFrame(step);
             }
             requestAnimationFrame(step);
           });
+
           so.unobserve(e.target);
         }
       });
-    }, { threshold: 0.4 });
-    so.observe(statsRow);
+    }, { threshold: 0.3 });
+    so.observe(statsBox);
   }
 
   /* ── CONTACT FORM ── */
@@ -112,15 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
       var em = document.getElementById('cemail').value.trim();
       var m  = document.getElementById('cmsg').value.trim();
       if (!n || !em || !m) {
-        note.style.color = '#f87171';
-        note.textContent = 'Please fill in all fields.';
+        note.style.color = '#e2001a';
+        note.textContent = 'FILL IN ALL FIELDS.';
         return;
       }
       var subject = 'Job Opportunity from ' + encodeURIComponent(n);
-      var body = encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\nMessage:\n' + m);
+      var body    = encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\nMessage:\n' + m);
       window.location.href = 'mailto:aryanpatil2903@gmail.com?subject=' + subject + '&body=' + body;
-      note.style.color = '#ff7940';
-      note.textContent = '✓ Opening mail client...';
+      note.style.color = '#1c69d4';
+      note.textContent = '✓ OPENING MAIL CLIENT...';
       form.reset();
       setTimeout(function() { note.textContent = ''; }, 4000);
     });
