@@ -3,41 +3,29 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aryan Patil | LLM & AI/ML Engineer</title>
+  <title>Aryan Patil — LLM & AI/ML Engineer</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-  <!-- CARBON TEXTURE -->
-  <div class="carbon-bg"></div>
-
   <!-- ─── NAVBAR ─── -->
   <nav class="navbar" id="navbar">
-    <div class="nav-left">
-      <div class="m-badge-logo">
-        <span class="m-blue">A</span><span class="m-violet">P</span><span class="m-red">.</span>
-      </div>
-      <div class="m-stripe-logo">
-        <span class="s-blue"></span>
-        <span class="s-violet"></span>
-        <span class="s-red"></span>
-      </div>
+    <div class="nav-logo">
+      <span class="logo-ap">Aryan</span>
+      <span class="logo-dot accent">.</span>
     </div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-right">
-      <span class="nav-status">
-        <span class="live-dot"></span> AVAILABLE
-      </span>
-      <a href="#contact" class="btn-m">HIRE ME</a>
+    <div class="nav-actions">
+      <span class="nav-avail"><span class="avail-dot"></span>Available</span>
+      <a href="#contact" class="btn-accent">Hire Me</a>
     </div>
     <button class="hamburger" id="hamburger" type="button">
       <span></span><span></span><span></span>
@@ -45,483 +33,424 @@
   </nav>
 
   <!-- ─── HERO ─── -->
-  <section class="hero" id="hero">
-    <div class="hero-grid-overlay"></div>
-
-    <div class="hero-inner">
-      <div class="hero-eyebrow">
-        <div class="m-stripe-bar">
-          <span></span><span></span><span></span>
-        </div>
-        <span class="eyebrow-text">LLM &amp; AI/ML ENGINEER · NAVI MUMBAI · OPEN TO WORK</span>
-        <div class="m-stripe-bar">
-          <span></span><span></span><span></span>
-        </div>
+  <section class="hero" id="about">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="tag-dot accent-bg"></span>
+        LLM &amp; AI/ML Engineer · Navi Mumbai
       </div>
-
       <h1 class="hero-title">
-        <span class="title-name">ARYAN</span>
-        <span class="title-name title-last">PATIL</span>
+        Building<br/>
+        <em class="serif-italic accent">intelligent</em><br/>
+        systems.
       </h1>
-
-      <div class="hero-m-divider">
-        <div class="hmd-line"></div>
-        <div class="hmd-stripes">
-          <span class="s-blue"></span>
-          <span class="s-violet"></span>
-          <span class="s-red"></span>
-        </div>
-        <div class="hmd-line"></div>
-      </div>
-
-      <p class="hero-tagline">
-        I BUILD SYSTEMS THAT THINK.
+      <p class="hero-body">
+        I fine-tune large language models, build RAG pipelines,
+        and ship real-time computer vision systems —
+        all on constrained consumer hardware.
+        <strong>5 deployed projects. Diploma AI &amp; ML, MSBTE 2026 — 77.59%.</strong>
       </p>
-      <p class="hero-sub">
-        LLM fine-tuning · RAG pipelines · Real-time CV — deployed on constrained hardware.
-        5 production projects. Diploma AI &amp; ML, MSBTE 2026 — <strong>77.59%</strong>
-      </p>
-
       <div class="hero-ctas">
-        <a href="#projects" class="btn-m btn-m-lg">
-          <i class="fas fa-rocket"></i> VIEW PROJECTS
-        </a>
-        <a href="#contact" class="btn-m-ghost btn-m-lg">
-          <i class="fas fa-envelope"></i> GET IN TOUCH
-        </a>
+        <a href="#projects" class="btn-accent btn-lg">View Projects</a>
+        <a href="#contact" class="btn-outline btn-lg">Get In Touch</a>
+      </div>
+      <div class="hero-facts">
+        <div class="hfact">
+          <span class="hfact-n accent">5+</span>
+          <span class="hfact-l">Projects</span>
+        </div>
+        <div class="hfact-sep"></div>
+        <div class="hfact">
+          <span class="hfact-n accent">3B</span>
+          <span class="hfact-l">Params Tuned</span>
+        </div>
+        <div class="hfact-sep"></div>
+        <div class="hfact">
+          <span class="hfact-n accent">4GB</span>
+          <span class="hfact-l">VRAM Budget</span>
+        </div>
+        <div class="hfact-sep"></div>
+        <div class="hfact">
+          <span class="hfact-n accent">&lt;100ms</span>
+          <span class="hfact-l">CV Inference</span>
+        </div>
       </div>
     </div>
 
-    <!-- RACING STATS -->
-    <div class="racing-stats">
-      <div class="rstat">
-        <div class="rstat-track">
-          <div class="rstat-fill" data-w="100"></div>
-        </div>
-        <span class="rstat-num" data-count="5" data-suffix="+">0+</span>
-        <span class="rstat-label">PROJECTS</span>
+    <div class="hero-right">
+      <!-- Abstract AI Geometric Shape -->
+      <div class="geo-wrap">
+        <svg class="geo-svg" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer ring -->
+          <circle cx="240" cy="240" r="220" stroke="#0066FF" stroke-width="1" stroke-dasharray="8 6" opacity="0.3"/>
+          <!-- Mid ring -->
+          <circle cx="240" cy="240" r="160" stroke="#0066FF" stroke-width="1" opacity="0.15"/>
+          <!-- Inner ring -->
+          <circle cx="240" cy="240" r="100" stroke="#000" stroke-width="1.5" opacity="0.1"/>
+          <!-- Hexagon -->
+          <polygon points="240,80 370,160 370,320 240,400 110,320 110,160" stroke="#0066FF" stroke-width="2" fill="none" opacity="0.6"/>
+          <!-- Inner hex -->
+          <polygon points="240,130 325,180 325,280 240,330 155,280 155,180" stroke="#000" stroke-width="1" fill="none" opacity="0.12"/>
+          <!-- Cross lines -->
+          <line x1="240" y1="40" x2="240" y2="440" stroke="#0066FF" stroke-width="1" opacity="0.1"/>
+          <line x1="40" y1="240" x2="440" y2="240" stroke="#0066FF" stroke-width="1" opacity="0.1"/>
+          <line x1="90" y1="90" x2="390" y2="390" stroke="#0066FF" stroke-width="1" opacity="0.07"/>
+          <line x1="390" y1="90" x2="90" y2="390" stroke="#0066FF" stroke-width="1" opacity="0.07"/>
+          <!-- Center node -->
+          <circle cx="240" cy="240" r="40" fill="#0066FF" opacity="0.08"/>
+          <circle cx="240" cy="240" r="20" fill="#0066FF" opacity="0.15"/>
+          <circle cx="240" cy="240" r="8" fill="#0066FF"/>
+          <!-- Orbit nodes -->
+          <circle cx="240" cy="80" r="5" fill="#0066FF"/>
+          <circle cx="370" cy="160" r="5" fill="#0066FF" opacity="0.7"/>
+          <circle cx="370" cy="320" r="5" fill="#0066FF" opacity="0.5"/>
+          <circle cx="240" cy="400" r="5" fill="#0066FF" opacity="0.7"/>
+          <circle cx="110" cy="320" r="5" fill="#0066FF" opacity="0.5"/>
+          <circle cx="110" cy="160" r="5" fill="#0066FF" opacity="0.7"/>
+          <!-- Connection lines from center to nodes -->
+          <line x1="240" y1="240" x2="240" y2="80" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <line x1="240" y1="240" x2="370" y2="160" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <line x1="240" y1="240" x2="370" y2="320" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <line x1="240" y1="240" x2="240" y2="400" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <line x1="240" y1="240" x2="110" y2="320" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <line x1="240" y1="240" x2="110" y2="160" stroke="#0066FF" stroke-width="1" opacity="0.2"/>
+          <!-- Floating labels -->
+          <text x="252" y="72" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">LLM</text>
+          <text x="378" y="155" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">RAG</text>
+          <text x="375" y="328" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">CV</text>
+          <text x="220" y="420" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">NLP</text>
+          <text x="80" y="328" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">ML</text>
+          <text x="76" y="155" font-family="Inter" font-size="9" fill="#0066FF" opacity="0.8">DL</text>
+          <!-- Rotating element indicator -->
+          <circle cx="240" cy="240" r="130" stroke="#0066FF" stroke-width="1" stroke-dasharray="4 20" opacity="0.25" class="geo-spin"/>
+        </svg>
+        <div class="geo-label">AI / ML</div>
+        <div class="geo-sublabel">Neural Architecture</div>
       </div>
-      <div class="rstat-div"></div>
-      <div class="rstat">
-        <div class="rstat-track">
-          <div class="rstat-fill" data-w="60"></div>
-        </div>
-        <span class="rstat-num" data-count="3" data-suffix="B">0B</span>
-        <span class="rstat-label">PARAMS FINE-TUNED</span>
-      </div>
-      <div class="rstat-div"></div>
-      <div class="rstat">
-        <div class="rstat-track">
-          <div class="rstat-fill" data-w="40"></div>
-        </div>
-        <span class="rstat-num" data-count="4" data-suffix="GB">0GB</span>
-        <span class="rstat-label">VRAM BUDGET</span>
-      </div>
-      <div class="rstat-div"></div>
-      <div class="rstat">
-        <div class="rstat-track">
-          <div class="rstat-fill" data-w="95"></div>
-        </div>
-        <span class="rstat-num">&lt;100<small>ms</small></span>
-        <span class="rstat-label">CV INFERENCE</span>
-      </div>
-    </div>
-
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>SCROLL</span>
     </div>
   </section>
 
-  <!-- M STRIPE DIVIDER -->
-  <div class="m-section-stripe">
-    <span class="s-blue"></span>
-    <span class="s-violet"></span>
-    <span class="s-red"></span>
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>LLM Fine-tuning</span><span class="msep accent">✦</span>
+      <span>RAG Pipelines</span><span class="msep accent">✦</span>
+      <span>Computer Vision</span><span class="msep accent">✦</span>
+      <span>QLoRA · PEFT</span><span class="msep accent">✦</span>
+      <span>LangChain</span><span class="msep accent">✦</span>
+      <span>ChromaDB</span><span class="msep accent">✦</span>
+      <span>MediaPipe</span><span class="msep accent">✦</span>
+      <span>Flask · Gradio</span><span class="msep accent">✦</span>
+      <span>LLM Fine-tuning</span><span class="msep accent">✦</span>
+      <span>RAG Pipelines</span><span class="msep accent">✦</span>
+      <span>Computer Vision</span><span class="msep accent">✦</span>
+      <span>QLoRA · PEFT</span><span class="msep accent">✦</span>
+      <span>LangChain</span><span class="msep accent">✦</span>
+      <span>ChromaDB</span><span class="msep accent">✦</span>
+      <span>MediaPipe</span><span class="msep accent">✦</span>
+      <span>Flask · Gradio</span><span class="msep accent">✦</span>
+    </div>
   </div>
 
-  <!-- ─── ABOUT ─── -->
-  <section class="section" id="about">
+  <!-- ─── ABOUT / WHY ME ─── -->
+  <section class="section" id="why">
     <div class="container">
-      <div class="m-badge-header">
-        <div class="mbh-stripes">
-          <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-        </div>
-        <span class="mbh-label">PROFILE</span>
+      <div class="section-head">
+        <span class="section-index accent">01</span>
+        <h2 class="section-title">
+          Why<br/><em class="serif-italic">choose</em> me
+        </h2>
+        <p class="section-desc">I build end-to-end AI systems on constrained hardware. No cloud dependency. No excuses.</p>
       </div>
-      <h2 class="section-title">Why Recruiters<br/>Choose Aryan</h2>
 
-      <div class="precision-grid">
-
-        <div class="pgrid-card reveal">
-          <div class="pgrid-num">01</div>
-          <div class="pgrid-icon"><i class="fas fa-brain"></i></div>
+      <div class="cards-grid">
+        <div class="card card-accent reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon accent"><i class="fas fa-brain"></i></div>
           <h3>LLM Fine-tuning on 4GB VRAM</h3>
-          <p>Fine-tuned LLaMA 3.2 3B using QLoRA + PEFT on a consumer RTX 3050. No cloud. No budget. Just results.</p>
-          <div class="pgrid-tag">MedLLM · 4-bit Quant · LoRA R=8</div>
+          <p>Fine-tuned LLaMA 3.2 3B using QLoRA + PEFT on RTX 3050. 4-bit quantization, LoRA R=8, gradient accumulation=16. No cloud bills.</p>
+          <span class="card-tag">MedLLM · QLoRA · PEFT</span>
         </div>
-
-        <div class="pgrid-card reveal">
-          <div class="pgrid-num">02</div>
-          <div class="pgrid-icon"><i class="fas fa-diagram-project"></i></div>
-          <h3>Multi-Agent RAG Systems</h3>
-          <p>Built StockBot — multi-agent research assistant that fetches, reasons, and reports live stock data in real time.</p>
-          <div class="pgrid-tag">LangChain · Gemini API · Flask</div>
+        <div class="card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon accent"><i class="fas fa-diagram-project"></i></div>
+          <h3>Multi-Agent RAG</h3>
+          <p>StockBot fetches live financial data, reasons across agents, and returns structured analysis via conversational interface.</p>
+          <span class="card-tag">LangChain · Gemini API</span>
         </div>
-
-        <div class="pgrid-card reveal">
-          <div class="pgrid-num">03</div>
-          <div class="pgrid-icon"><i class="fas fa-eye"></i></div>
+        <div class="card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon accent"><i class="fas fa-eye"></i></div>
           <h3>Real-time CV &lt;100ms</h3>
-          <p>SignTalkAI translates sign language live via CNN + MediaPipe with threaded frame acquisition. Zero drop.</p>
-          <div class="pgrid-tag">OpenCV · TensorFlow · MJPEG</div>
+          <p>SignTalkAI delivers live sign language translation via CNN + MediaPipe. Threaded pipeline. Zero frame drop.</p>
+          <span class="card-tag">OpenCV · TensorFlow · MJPEG</span>
         </div>
-
-        <div class="pgrid-card reveal">
-          <div class="pgrid-num">04</div>
-          <div class="pgrid-icon"><i class="fas fa-ship"></i></div>
+        <div class="card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon accent"><i class="fas fa-ship"></i></div>
           <h3>End-to-End Ownership</h3>
-          <p>Every project: data prep → training → deployment → interface. No half-finished repos. No excuses.</p>
-          <div class="pgrid-tag">Flask · Gradio · Git · Docker</div>
+          <p>Every project ships complete — data prep, training, deployment, interface. No half-finished repositories.</p>
+          <span class="card-tag">Flask · Gradio · Git</span>
         </div>
-
-        <div class="pgrid-card pgrid-wide reveal">
-          <div class="pgrid-num">05</div>
-          <div class="pgrid-icon"><i class="fas fa-mobile-screen"></i></div>
-          <h3>Built From Mobile → Now Shipping on RTX 3050</h3>
-          <p>Started this entire journey coding on a phone with no laptop. Now running local LLMs, training CNNs, and deploying RAG apps. Resourcefulness is the skill that matters most.</p>
-          <div class="pgrid-tag">Acer Nitro V · Ryzen 5 6600H · 16GB RAM · RTX 3050 6GB</div>
+        <div class="card card-wide card-dark reveal">
+          <div class="card-num light">05</div>
+          <div class="card-icon light"><i class="fas fa-mobile-screen"></i></div>
+          <h3 class="light">Built From Mobile → Now Shipping on RTX 3050</h3>
+          <p class="light">Started this entire journey coding on a phone with no laptop. Now running local LLMs, training CNNs, deploying RAG apps. Resourcefulness is the real skill.</p>
+          <span class="card-tag-light">Acer Nitro V · Ryzen 5 6600H · 16GB RAM · RTX 3050 6GB</span>
         </div>
-
       </div>
     </div>
   </section>
-
-  <div class="m-section-stripe">
-    <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-  </div>
 
   <!-- ─── SKILLS ─── -->
-  <section class="section" id="skills">
+  <section class="section section-tinted" id="skills">
     <div class="container">
-      <div class="m-badge-header">
-        <div class="mbh-stripes">
-          <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-        </div>
-        <span class="mbh-label">PERFORMANCE SPECS</span>
+      <div class="section-head">
+        <span class="section-index accent">02</span>
+        <h2 class="section-title">
+          Technical<br/><em class="serif-italic">arsenal</em>
+        </h2>
+        <p class="section-desc">From raw Python to deployed LLM applications.</p>
       </div>
-      <h2 class="section-title">Technical<br/>Arsenal</h2>
 
-      <div class="specs-grid">
-
-        <div class="spec-card reveal">
-          <div class="spec-header">
-            <div class="spec-icon"><i class="fas fa-brain"></i></div>
+      <div class="skills-layout">
+        <div class="skill-main reveal">
+          <div class="skill-main-head">
+            <div class="sk-icon accent-bg"><i class="fas fa-brain"></i></div>
             <div>
               <h3>LLM Engineering</h3>
-              <span class="spec-sub">CORE SYSTEM</span>
+              <span class="sk-sub">Core Specialization</span>
             </div>
           </div>
-          <div class="spec-bars">
-            <div class="spec-bar-row">
-              <span class="sbr-label">Fine-tuning (QLoRA/PEFT)</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="88"></div></div>
-              <span class="sbr-val">88</span>
+          <div class="sk-bars">
+            <div class="sk-bar-row">
+              <span>Fine-tuning (QLoRA/PEFT)</span>
+              <div class="sk-track"><div class="sk-fill" data-w="88"></div></div>
+              <span class="sk-pct accent">88</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">Prompt Engineering</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="92"></div></div>
-              <span class="sbr-val">92</span>
+            <div class="sk-bar-row">
+              <span>Prompt Engineering</span>
+              <div class="sk-track"><div class="sk-fill" data-w="92"></div></div>
+              <span class="sk-pct accent">92</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">RAG Pipelines</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="85"></div></div>
-              <span class="sbr-val">85</span>
+            <div class="sk-bar-row">
+              <span>RAG Pipelines</span>
+              <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+              <span class="sk-pct accent">85</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">LangChain</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="83"></div></div>
-              <span class="sbr-val">83</span>
+            <div class="sk-bar-row">
+              <span>LangChain</span>
+              <div class="sk-track"><div class="sk-fill" data-w="83"></div></div>
+              <span class="sk-pct accent">83</span>
             </div>
-          </div>
-          <div class="spec-chips">
-            <span>LLaMA 3.2</span><span>PEFT</span><span>QLoRA</span>
-            <span>BitsAndBytes</span><span>Hugging Face</span><span>Gemini API</span>
-          </div>
-        </div>
-
-        <div class="spec-card reveal">
-          <div class="spec-header">
-            <div class="spec-icon"><i class="fas fa-eye"></i></div>
-            <div>
-              <h3>Computer Vision</h3>
-              <span class="spec-sub">INFERENCE ENGINE</span>
+            <div class="sk-bar-row">
+              <span>Python</span>
+              <div class="sk-track"><div class="sk-fill" data-w="90"></div></div>
+              <span class="sk-pct accent">90</span>
             </div>
-          </div>
-          <div class="spec-bars">
-            <div class="spec-bar-row">
-              <span class="sbr-label">OpenCV / MediaPipe</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="80"></div></div>
-              <span class="sbr-val">80</span>
-            </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">CNN Architecture</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="75"></div></div>
-              <span class="sbr-val">75</span>
-            </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">TensorFlow</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="78"></div></div>
-              <span class="sbr-val">78</span>
-            </div>
-          </div>
-          <div class="spec-chips">
-            <span>OpenCV</span><span>MediaPipe</span>
-            <span>TensorFlow</span><span>CNN</span><span>MJPEG</span>
           </div>
         </div>
 
-        <div class="spec-card reveal">
-          <div class="spec-header">
-            <div class="spec-icon"><i class="fas fa-chart-line"></i></div>
-            <div>
-              <h3>ML &amp; Data</h3>
-              <span class="spec-sub">ANALYTICS UNIT</span>
+        <div class="skill-cards">
+          <div class="sk-card reveal">
+            <div class="sk-card-icon accent"><i class="fas fa-eye"></i></div>
+            <h4>Computer Vision</h4>
+            <div class="sk-chips">
+              <span>OpenCV</span><span>MediaPipe</span><span>TensorFlow</span><span>CNN</span>
+            </div>
+            <div class="sk-bar-row sm">
+              <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+              <span class="sk-pct accent">80</span>
             </div>
           </div>
-          <div class="spec-bars">
-            <div class="spec-bar-row">
-              <span class="sbr-label">Scikit-learn</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="84"></div></div>
-              <span class="sbr-val">84</span>
+          <div class="sk-card reveal">
+            <div class="sk-card-icon accent"><i class="fas fa-chart-line"></i></div>
+            <h4>ML &amp; Data</h4>
+            <div class="sk-chips">
+              <span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>EDA</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">Pandas / NumPy</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="82"></div></div>
-              <span class="sbr-val">82</span>
-            </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">EDA &amp; Feature Eng.</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="79"></div></div>
-              <span class="sbr-val">79</span>
+            <div class="sk-bar-row sm">
+              <div class="sk-track"><div class="sk-fill" data-w="84"></div></div>
+              <span class="sk-pct accent">84</span>
             </div>
           </div>
-          <div class="spec-chips">
-            <span>Scikit-learn</span><span>Pandas</span>
-            <span>NumPy</span><span>Matplotlib</span><span>EDA</span>
-          </div>
-        </div>
-
-        <div class="spec-card reveal">
-          <div class="spec-header">
-            <div class="spec-icon"><i class="fas fa-server"></i></div>
-            <div>
-              <h3>Deployment</h3>
-              <span class="spec-sub">LAUNCH SYSTEM</span>
+          <div class="sk-card reveal">
+            <div class="sk-card-icon accent"><i class="fas fa-server"></i></div>
+            <h4>Deployment</h4>
+            <div class="sk-chips">
+              <span>Flask</span><span>Gradio</span><span>Docker</span><span>LM Studio</span>
+            </div>
+            <div class="sk-bar-row sm">
+              <div class="sk-track"><div class="sk-fill" data-w="87"></div></div>
+              <span class="sk-pct accent">87</span>
             </div>
           </div>
-          <div class="spec-bars">
-            <div class="spec-bar-row">
-              <span class="sbr-label">Flask / Gradio</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="87"></div></div>
-              <span class="sbr-val">87</span>
+          <div class="sk-card reveal">
+            <div class="sk-card-icon accent"><i class="fas fa-database"></i></div>
+            <h4>Vector DBs</h4>
+            <div class="sk-chips">
+              <span>ChromaDB</span><span>FAISS</span><span>Embeddings</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">Python</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="90"></div></div>
-              <span class="sbr-val">90</span>
+            <div class="sk-bar-row sm">
+              <div class="sk-track"><div class="sk-fill" data-w="82"></div></div>
+              <span class="sk-pct accent">82</span>
             </div>
-            <div class="spec-bar-row">
-              <span class="sbr-label">ChromaDB / FAISS</span>
-              <div class="sbr-track"><div class="sbr-fill" data-w="82"></div></div>
-              <span class="sbr-val">82</span>
-            </div>
-          </div>
-          <div class="spec-chips">
-            <span>Flask</span><span>Gradio</span><span>Docker</span>
-            <span>LM Studio</span><span>Git</span><span>ChromaDB</span>
           </div>
         </div>
-
       </div>
 
-      <!-- FULL TECH STRIP -->
-      <div class="tech-strip reveal">
-        <div class="ts-label">FULL STACK</div>
-        <div class="ts-items">
+      <div class="tech-cloud reveal">
+        <span class="tc-label">Full Stack</span>
+        <div class="tc-chips">
           <span>LLaMA 3.2</span><span>PEFT</span><span>QLoRA</span>
           <span>BitsAndBytes</span><span>Hugging Face</span><span>Gemini API</span>
           <span>LangChain</span><span>ChromaDB</span><span>FAISS</span>
           <span>Flask</span><span>Gradio</span><span>OpenCV</span>
           <span>MediaPipe</span><span>TensorFlow</span><span>Scikit-learn</span>
-          <span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
-          <span>Git</span><span>Docker</span><span>LM Studio</span><span>SQL</span>
+          <span>Pandas</span><span>NumPy</span><span>Git</span>
+          <span>Docker</span><span>LM Studio</span><span>SQL</span>
         </div>
       </div>
     </div>
   </section>
-
-  <div class="m-section-stripe">
-    <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-  </div>
 
   <!-- ─── PROJECTS ─── -->
   <section class="section" id="projects">
     <div class="container">
-      <div class="m-badge-header">
-        <div class="mbh-stripes">
-          <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-        </div>
-        <span class="mbh-label">TRACK RECORD</span>
+      <div class="section-head">
+        <span class="section-index accent">03</span>
+        <h2 class="section-title">
+          5 projects.<br/><em class="serif-italic">All deployed.</em>
+        </h2>
+        <p class="section-desc">Not toy demos. Real data, working interfaces, documented code.</p>
       </div>
-      <h2 class="section-title">5 Projects.<br/>All Deployed.</h2>
 
-      <div class="projects-precision">
+      <div class="proj-list">
 
-        <div class="proj-card reveal">
-          <div class="proj-left">
-            <div class="proj-stripe">
-              <span class="s-blue"></span>
-              <span class="s-violet"></span>
-              <span class="s-red"></span>
-            </div>
-            <div class="proj-num">01</div>
+        <div class="proj-item reveal">
+          <div class="proj-meta">
+            <span class="proj-num accent">01</span>
+            <span class="proj-badge accent-bg">Featured</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top">
-              <div>
-                <span class="proj-featured">FEATURED</span>
-                <h3>StockBot</h3>
-                <p class="proj-type">Multi-Agent RAG · Web Application</p>
-              </div>
-              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-gh">
-                <i class="fab fa-github"></i>
-              </a>
+            <div class="proj-title-row">
+              <h3>StockBot</h3>
+              <span class="proj-type">Multi-Agent RAG · Flask</span>
             </div>
-            <p class="proj-desc">Multi-agent stock research assistant. Fetches live financial data, runs multi-step reasoning across agents, delivers structured insights via conversational Flask interface.</p>
+            <p>Multi-agent stock research assistant. Fetches live financial data, runs multi-step reasoning across agents, and delivers structured investment insights via a conversational interface.</p>
             <div class="proj-achieve">
-              <i class="fas fa-flag-checkered"></i>
-              Automates data fetching, summarization &amp; comparative analysis across stocks in one query.
+              <i class="fas fa-arrow-right accent"></i>
+              Automates data fetching, summarization &amp; comparative stock analysis in one query.
             </div>
-            <div class="proj-tags">
-              <span>LangChain</span><span>Multi-Agent</span><span>RAG</span>
-              <span>Gemini API</span><span>Flask</span>
+            <div class="proj-foot">
+              <div class="proj-tags">
+                <span>LangChain</span><span>Multi-Agent</span><span>RAG</span><span>Gemini API</span><span>Flask</span>
+              </div>
+              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-link">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="proj-card reveal">
-          <div class="proj-left">
-            <div class="proj-stripe">
-              <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-            </div>
-            <div class="proj-num">02</div>
+        <div class="proj-item reveal">
+          <div class="proj-meta">
+            <span class="proj-num accent">02</span>
+            <span class="proj-badge accent-bg">Featured</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top">
-              <div>
-                <span class="proj-featured">FEATURED</span>
-                <h3>SignTalkAI</h3>
-                <p class="proj-type">Computer Vision · Real-time Inference</p>
-              </div>
-              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-gh">
-                <i class="fab fa-github"></i>
-              </a>
+            <div class="proj-title-row">
+              <h3>SignTalkAI</h3>
+              <span class="proj-type">Computer Vision · Real-time</span>
             </div>
-            <p class="proj-desc">Real-time sign language translation via CNN + MediaPipe. Threaded frame acquisition, decoupled preprocessing, live MJPEG stream on consumer hardware.</p>
+            <p>Real-time sign language translation via CNN + MediaPipe. Threaded frame acquisition, decoupled preprocessing from inference, live MJPEG stream. Sub-100ms on consumer GPU.</p>
             <div class="proj-achieve">
-              <i class="fas fa-flag-checkered"></i>
-              Sub-100ms end-to-end inference on RTX 3050 6GB — zero frame drop.
+              <i class="fas fa-arrow-right accent"></i>
+              Sub-100ms inference on RTX 3050 6GB — zero frame drop in live stream.
             </div>
-            <div class="proj-tags">
-              <span>CNN</span><span>MediaPipe</span><span>OpenCV</span>
-              <span>TensorFlow</span><span>Flask</span>
+            <div class="proj-foot">
+              <div class="proj-tags">
+                <span>CNN</span><span>MediaPipe</span><span>OpenCV</span><span>TensorFlow</span><span>Flask</span>
+              </div>
+              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-link">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="proj-card reveal">
-          <div class="proj-left">
-            <div class="proj-stripe">
-              <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-            </div>
-            <div class="proj-num">03</div>
+        <div class="proj-item reveal">
+          <div class="proj-meta">
+            <span class="proj-num accent">03</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top">
-              <div>
-                <h3>MedLLM</h3>
-                <p class="proj-type">LLM Fine-tuning · Medical Domain</p>
-              </div>
-              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-gh">
-                <i class="fab fa-github"></i>
-              </a>
+            <div class="proj-title-row">
+              <h3>MedLLM</h3>
+              <span class="proj-type">LLM Fine-tuning · Medical</span>
             </div>
-            <p class="proj-desc">Fine-tuned LLaMA 3.2 3B on medical Q&amp;A using PEFT/QLoRA (4-bit quant, LoRA R=8 A=16). Gradio interface. Runs entirely on 4GB VRAM.</p>
+            <p>Fine-tuned LLaMA 3.2 3B on medical Q&amp;A using PEFT/QLoRA — 4-bit quant, LoRA R=8 A=16, gradient accumulation=16. Runs entirely on 4GB VRAM. Gradio interface.</p>
             <div class="proj-achieve">
-              <i class="fas fa-flag-checkered"></i>
-              3B model matching larger general LLMs on targeted medical tasks.
+              <i class="fas fa-arrow-right accent"></i>
+              3B model matching larger general LLMs on targeted medical domain tasks.
             </div>
-            <div class="proj-tags">
-              <span>LLaMA 3.2</span><span>QLoRA</span><span>PEFT</span>
-              <span>BitsAndBytes</span><span>Gradio</span>
+            <div class="proj-foot">
+              <div class="proj-tags">
+                <span>LLaMA 3.2</span><span>QLoRA</span><span>PEFT</span><span>BitsAndBytes</span><span>Gradio</span>
+              </div>
+              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-link">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="proj-card reveal">
-          <div class="proj-left">
-            <div class="proj-stripe">
-              <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-            </div>
-            <div class="proj-num">04</div>
+        <div class="proj-item reveal">
+          <div class="proj-meta">
+            <span class="proj-num accent">04</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top">
-              <div>
-                <h3>Spam Email Classifier</h3>
-                <p class="proj-type">NLP · Classification Pipeline</p>
-              </div>
-              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-gh">
-                <i class="fab fa-github"></i>
-              </a>
+            <div class="proj-title-row">
+              <h3>Spam Email Classifier</h3>
+              <span class="proj-type">NLP · Classification</span>
             </div>
-            <p class="proj-desc">End-to-end NLP pipeline using TF-IDF + ensemble ML models. Optimized for precision — minimizes false positives on legitimate email.</p>
+            <p>End-to-end NLP pipeline using TF-IDF vectorization and ensemble ML models. Optimized for precision — minimizes false positives on legitimate email.</p>
             <div class="proj-achieve">
-              <i class="fas fa-flag-checkered"></i>
-              High precision on test set — critical emails never wrongly flagged.
+              <i class="fas fa-arrow-right accent"></i>
+              High precision on test set — critical emails never wrongly flagged as spam.
             </div>
-            <div class="proj-tags">
-              <span>NLP</span><span>TF-IDF</span><span>Scikit-learn</span><span>Python</span>
+            <div class="proj-foot">
+              <div class="proj-tags">
+                <span>NLP</span><span>TF-IDF</span><span>Scikit-learn</span><span>Python</span>
+              </div>
+              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-link">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="proj-card reveal">
-          <div class="proj-left">
-            <div class="proj-stripe">
-              <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-            </div>
-            <div class="proj-num">05</div>
+        <div class="proj-item reveal">
+          <div class="proj-meta">
+            <span class="proj-num accent">05</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top">
-              <div>
-                <h3>Student Marks Predictor</h3>
-                <p class="proj-type">Regression · EDA · Flask</p>
-              </div>
-              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-gh">
-                <i class="fab fa-github"></i>
-              </a>
+            <div class="proj-title-row">
+              <h3>Student Marks Predictor</h3>
+              <span class="proj-type">Regression · EDA · Flask</span>
             </div>
-            <p class="proj-desc">Regression model predicting student performance. Full EDA, feature engineering pipeline, and a Flask-based prediction interface.</p>
+            <p>Regression model predicting student academic performance. Full EDA, feature engineering pipeline, Flask prediction interface. Complete ML pipeline from raw data to deployment.</p>
             <div class="proj-achieve">
-              <i class="fas fa-flag-checkered"></i>
-              Complete ML pipeline from raw data to deployed web interface.
+              <i class="fas fa-arrow-right accent"></i>
+              End-to-end pipeline demonstrating full ML project ownership.
             </div>
-            <div class="proj-tags">
-              <span>Regression</span><span>EDA</span><span>Pandas</span>
-              <span>Flask</span><span>Scikit-learn</span>
+            <div class="proj-foot">
+              <div class="proj-tags">
+                <span>Regression</span><span>EDA</span><span>Pandas</span><span>Flask</span><span>Scikit-learn</span>
+              </div>
+              <a href="https://github.com/AryanPatil2903" target="_blank" class="proj-link">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
         </div>
@@ -529,127 +458,95 @@
       </div>
     </div>
   </section>
-
-  <div class="m-section-stripe">
-    <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-  </div>
 
   <!-- ─── EDUCATION ─── -->
-  <section class="section" id="education">
+  <section class="section section-tinted" id="education">
     <div class="container">
-      <div class="m-badge-header">
-        <div class="mbh-stripes">
-          <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-        </div>
-        <span class="mbh-label">CREDENTIALS</span>
+      <div class="section-head">
+        <span class="section-index accent">04</span>
+        <h2 class="section-title">
+          Academic<br/><em class="serif-italic">background</em>
+        </h2>
       </div>
-      <h2 class="section-title">Academic<br/>Background</h2>
 
-      <div class="edu-precision">
-
-        <div class="edu-card reveal">
-          <div class="edu-stripe">
-            <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
+      <div class="edu-grid">
+        <div class="edu-card edu-main reveal">
+          <div class="edu-year accent">2024 – 2026</div>
+          <h3>Diploma in AI &amp; Machine Learning</h3>
+          <p class="edu-org">Sheth Shri Otarmal Sheshmal Parmar College · MSBTE</p>
+          <div class="edu-score-row">
+            <span class="edu-score accent-bg">77.59%</span>
+            <span class="edu-dist">First Class with Distinction</span>
           </div>
-          <div class="edu-body">
-            <span class="edu-year">2024 – 2026</span>
-            <h3>Diploma in AI &amp; Machine Learning</h3>
-            <p class="edu-org">Sheth Shri Otarmal Sheshmal Parmar College · MSBTE</p>
-            <div class="edu-score-row">
-              <span class="edu-score">77.59%</span>
-              <span class="edu-grade">FIRST CLASS WITH DISTINCTION</span>
-            </div>
-            <div class="edu-chips">
-              <span>Deep Learning</span><span>NLP</span><span>Computer Vision</span>
-              <span>Big Data Analytics</span><span>DIP</span><span>MLOps</span>
-            </div>
+          <div class="edu-subjects">
+            <span>Deep Learning</span><span>NLP</span><span>Computer Vision</span>
+            <span>Big Data Analytics</span><span>DIP</span><span>MLOps</span>
           </div>
         </div>
 
         <div class="edu-card reveal">
-          <div class="edu-stripe">
-            <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-          </div>
-          <div class="edu-body">
-            <span class="edu-year">2022</span>
-            <h3>HSC — Science</h3>
-            <p class="edu-org">Maharashtra State Board</p>
-            <div class="edu-score-row">
-              <span class="edu-score">59.23%</span>
-            </div>
+          <div class="edu-year accent">2022</div>
+          <h3>HSC — Science</h3>
+          <p class="edu-org">Maharashtra State Board</p>
+          <div class="edu-score-row">
+            <span class="edu-score accent-bg">59.23%</span>
           </div>
         </div>
 
         <div class="edu-card reveal">
-          <div class="edu-stripe">
-            <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
+          <div class="edu-year accent">Self-Taught</div>
+          <h3>LLM Engineering &amp; Deployment</h3>
+          <p class="edu-org">Hugging Face · LangChain · Project-based</p>
+          <div class="edu-score-row">
+            <span class="edu-score accent-bg">Applied</span>
           </div>
-          <div class="edu-body">
-            <span class="edu-year">SELF-TAUGHT</span>
-            <h3>LLM Engineering &amp; Deployment</h3>
-            <p class="edu-org">Hugging Face · LangChain · Project-based Learning</p>
-            <div class="edu-score-row">
-              <span class="edu-score">APPLIED</span>
-            </div>
-            <div class="edu-chips">
-              <span>Fine-tuning</span><span>RAG</span>
-              <span>Vector DBs</span><span>Local LLM Deployment</span>
-            </div>
+          <div class="edu-subjects">
+            <span>Fine-tuning</span><span>RAG</span><span>Vector DBs</span><span>Local LLM</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
-  <div class="m-section-stripe">
-    <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-  </div>
 
   <!-- ─── CONTACT ─── -->
   <section class="section" id="contact">
     <div class="container">
-      <div class="m-badge-header">
-        <div class="mbh-stripes">
-          <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-        </div>
-        <span class="mbh-label">CONTACT</span>
-      </div>
-      <h2 class="section-title">Ready to hire<br/>someone who ships?</h2>
-
-      <div class="contact-precision">
+      <div class="contact-split">
         <div class="contact-left reveal">
-          <p class="contact-desc">Actively looking for LLM Engineer and AI/ML Engineer roles in Navi Mumbai and Pune. Open to hybrid and remote.</p>
+          <span class="section-index accent">05</span>
+          <h2 class="section-title">
+            Let's<br/><em class="serif-italic">work together</em>
+          </h2>
+          <p class="contact-desc">
+            Actively looking for LLM Engineer and AI/ML Engineer roles in Navi Mumbai and Pune. Open to hybrid and remote.
+          </p>
           <div class="contact-links">
             <a href="mailto:aryanpatil2903@gmail.com" class="clink">
-              <div class="clink-icon"><i class="fas fa-envelope"></i></div>
+              <i class="fas fa-envelope accent"></i>
               <div>
-                <span class="clink-label">EMAIL</span>
-                <span class="clink-val">aryanpatil2903@gmail.com</span>
+                <span class="cl-label">Email</span>
+                <span class="cl-val">aryanpatil2903@gmail.com</span>
               </div>
-              <i class="fas fa-arrow-right clink-arrow"></i>
             </a>
             <a href="https://github.com/AryanPatil2903" target="_blank" class="clink">
-              <div class="clink-icon"><i class="fab fa-github"></i></div>
+              <i class="fab fa-github accent"></i>
               <div>
-                <span class="clink-label">GITHUB</span>
-                <span class="clink-val">AryanPatil2903</span>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-val">AryanPatil2903</span>
               </div>
-              <i class="fas fa-arrow-right clink-arrow"></i>
             </a>
             <a href="#" class="clink">
-              <div class="clink-icon"><i class="fab fa-linkedin"></i></div>
+              <i class="fab fa-linkedin accent"></i>
               <div>
-                <span class="clink-label">LINKEDIN</span>
-                <span class="clink-val">linkedin.com/in/aryanpatil</span>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-val">linkedin.com/in/aryanpatil</span>
               </div>
-              <i class="fas fa-arrow-right clink-arrow"></i>
             </a>
             <div class="clink no-hover">
-              <div class="clink-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <i class="fas fa-map-marker-alt accent"></i>
               <div>
-                <span class="clink-label">LOCATION</span>
-                <span class="clink-val">Navi Mumbai, Maharashtra</span>
+                <span class="cl-label">Location</span>
+                <span class="cl-val">Navi Mumbai, Maharashtra</span>
               </div>
             </div>
           </div>
@@ -657,22 +554,20 @@
 
         <div class="contact-right reveal">
           <form class="cform" id="cform">
-            <div class="cform-row">
-              <div class="fg">
-                <label>YOUR NAME</label>
-                <input type="text" id="cname" placeholder="Recruiter / HR name" required/>
-              </div>
-              <div class="fg">
-                <label>COMPANY EMAIL</label>
-                <input type="email" id="cemail" placeholder="hr@company.com" required/>
-              </div>
+            <div class="fg">
+              <label>Your Name</label>
+              <input type="text" id="cname" placeholder="Recruiter / HR name" required/>
             </div>
             <div class="fg">
-              <label>ROLE / OPPORTUNITY</label>
+              <label>Company Email</label>
+              <input type="email" id="cemail" placeholder="hr@company.com" required/>
+            </div>
+            <div class="fg">
+              <label>Role / Opportunity</label>
               <textarea id="cmsg" rows="5" placeholder="Tell me about the role and what you're building..." required></textarea>
             </div>
-            <button type="submit" class="btn-m btn-m-lg btn-full">
-              <i class="fas fa-paper-plane"></i> SEND MESSAGE
+            <button type="submit" class="btn-accent btn-lg btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
             </button>
             <p class="fnote" id="fnote"></p>
           </form>
@@ -683,33 +578,19 @@
 
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
-    <div class="m-section-stripe">
-      <span class="s-blue"></span><span class="s-violet"></span><span class="s-red"></span>
-    </div>
     <div class="container footer-inner">
       <div class="footer-left">
-        <div class="m-badge-logo footer-logo">
-          <span class="m-blue">A</span><span class="m-violet">P</span><span class="m-red">.</span>
+        <div class="nav-logo">
+          <span class="logo-ap">Aryan</span><span class="logo-dot accent">.</span>
         </div>
-        <p>LLM &amp; AI/ML Engineer · Navi Mumbai</p>
-        <p class="fcopy">© 2026 Aryan Patil. All rights reserved.</p>
+        <p>LLM &amp; AI/ML Engineer · Navi Mumbai · 2026</p>
       </div>
       <div class="footer-links">
-        <div class="fcol">
-          <p class="fcol-title">NAVIGATE</p>
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="fcol">
-          <p class="fcol-title">FIND ME</p>
-          <a href="https://github.com/AryanPatil2903" target="_blank">GitHub</a>
-          <a href="#">LinkedIn</a>
-          <a href="mailto:aryanpatil2903@gmail.com">Email</a>
-        </div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
